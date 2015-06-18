@@ -22,9 +22,10 @@ ${{name}}: {{px.offset_x}} {{px.offset_y}} {{px.width}} {{px.height}}
   +sprite-height($sprite)
 
 {{#sprite}}
-{{class}}
+.{{class}}
   background-image: url('{{{escaped_image}}}')
 
+${{class}}: url('{{{escaped_image}}}')
 {{/sprite}}
 {{#retina}}
 @media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)
